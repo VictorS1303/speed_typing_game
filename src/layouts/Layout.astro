@@ -1,5 +1,7 @@
 ---
+import '../../public/css/style.css'
 import Screen from '../components/Screen.astro'
+import Button from '../components/Button.astro'
 const {title} = Astro.props
 ---
 
@@ -12,5 +14,6 @@ const {title} = Astro.props
 </head>
 <body>
     <Screen />
+    <Button className="button" id="button">Hello</Button>
 </body>
 </html>

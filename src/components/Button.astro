@@ -1,0 +1,39 @@
+---
+const {className, id} = Astro.props
+---
+
+
+<button class={className} id={id}>
+   <slot />
+</button>
+
+<style>
+    button
+    {
+        font-family: 'Muli', sans-serif;
+        color: var(--primary-text-color);
+        background-color: #15b0b0;
+        border: none;
+        padding: 10px 15px;
+        height: fit-content;
+        width: fit-content;
+        box-shadow: var(--box-shadow);
+        border-radius: calc(var(--base-border-radius) / 3);
+        text-transform: uppercase;
+        cursor: pointer !important;
+        transition: opacity .2s ease-in;
+    }
+
+    button:hover
+    {
+        opacity: .8;
+        transition: opacity .2s ease-in;
+    }
+
+    button:active
+    {
+        transform: scale(.98);
+        box-shadow: none;
+        transition: none;
+    }
+</style>
