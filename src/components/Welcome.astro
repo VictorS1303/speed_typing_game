@@ -1,9 +1,38 @@
 ---
-import Screen from './Screen.astro'
+import Screen from "./Screen.astro";
+import Container from "./Container.astro";
+import Button from "./Button.astro";
 ---
 
 <Screen className="welcome-screen" id="welcome_screen">
-    <div class="container welcome-screen-container" id="welcome_screen_container">
-        
+    <div
+        class="container welcome-screen-container"
+        id="welcome_screen_container"
+    >
+        <Container>
+            <div class="welcome-screen-content-container">
+                <header>
+                    <h1>Welcome to Speed Typer!</h1>
+                </header>
+                <p>
+                    Do you have the quickest finger on the planet?
+                    <br />
+                    That's what this game wants to test you for.
+                </p>
+                <Button
+                    class="welcome-screen-button"
+                    id="welcome_screen_button"
+                >
+                    Let's Go!
+                </Button>
+            </div>
+        </Container>
     </div>
 </Screen>
+
+<style>
+    .welcome-screen-content-container
+    {
+            
+    }
+</style>

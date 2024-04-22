@@ -1,0 +1,21 @@
+<div class="container screen-content-container" id="screen_content_container">
+    <slot/>
+</div>
+
+
+<style>
+    .container.screen-content-container
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--primary-text-color);
+        background-color: #333;
+        height: 300px;
+        width: 500px;
+        border-radius: calc(var(--base-border-radius) / 1.5);
+        box-shadow: var(--box-shadow);
+        text-align: center;
+    }
+</style>
