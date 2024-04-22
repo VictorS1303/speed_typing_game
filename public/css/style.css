@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Muli: 100, 200, 300, 400, 500, 600, 700, 800, 900');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    user-select: none;
+}
+
+:root
+{
+    /* Colors */
+    --primary-background-color: #253644;
+    --game-container-background-color: #2e3f52;
+    --primary-text-color: #fff;
+
+    /* Radii */
+    --base-border-radius: 10px;
+
+    /* Shadows */
+    --text-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+body
+{
+    font-family: 'Muli', sans-serif;
+    overflow: hidden;
+}
+
+button
+{
+    background-color: transparent;
+    cursor: pointer;
+}
