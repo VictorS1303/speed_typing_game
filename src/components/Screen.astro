@@ -1,8 +1,10 @@
 ---
+import Button from './Button.astro'
 const { className, id } = Astro.props;
 ---
 
 <section class={className} id={id}>
+    <Button/>
     <slot />
 </section>
 
@@ -10,7 +12,7 @@ const { className, id } = Astro.props;
 <style>
     section
     {
-        position: absolute;
+        position: relative;
         top: 0;
         left: 0;
         height: 100vh;
