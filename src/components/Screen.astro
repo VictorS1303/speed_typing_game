@@ -1,10 +1,8 @@
 ---
-import Button from './Button.astro'
 const { className, id } = Astro.props;
 ---
 
 <section class={className} id={id}>
-    <Button/>
     <slot />
 </section>
 
